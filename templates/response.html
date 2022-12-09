@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block title %}
+{{ super() }}
+<p>По вашему запросу павук нашел {{number}} ответов:
+{% endblock %}
+
+{% block content %}
+{% block mainmenu -%}
+<ul>
+    {% for a in answer -%}
+    <div>{{a}} <br> <br></div>
+    {% endfor -%}
+</ul>
+{% endblock mainmenu -%}
+{% endblock %}

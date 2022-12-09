@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block title %}
+{{ super() }}
+<p>Страница поиска
+{% endblock %}
+
+{% block content %}
+<form action="#" method="post">
+    <p>Введите данные:</p>
+    <p><input type="text" name="phrase" /></p>
+    <p><input type="submit" value="Найти" /></p>
+</form>
+{% endblock %}
