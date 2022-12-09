@@ -1,0 +1,20 @@
+<html>
+    <head>
+    {% block title -%}
+        {% if title %}
+            <title>Поисковый павук - {{ title }}</title>
+        {% else %}
+        <title>Поисковый павук</title>
+        {% endif %}
+    {% endblock %}
+    </head>
+    <body>
+    {% block content -%}
+        {% if title -%}
+        <h1>{{ title }}</h1>
+        {% else -%}
+        <h1>Поисковый павук</h1>
+        {% endif -%}
+    {% endblock -%}
+    </body>
+</html>
